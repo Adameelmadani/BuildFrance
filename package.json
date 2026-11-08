@@ -1,0 +1,19 @@
+{
+  "name": "buildfrance-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine BUILD FRANCE SAS (pages statiques + serveur Node.js pour le formulaire de contact)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test-mail": "node scripts/test-mail.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemailer": "^10.4.0"
+  }
+}

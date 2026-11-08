@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nous contacter - BUILD FRANCE, Nîmes</title>
+  <meta name="description" content="Contactez BUILD FRANCE à Nîmes pour votre projet de construction, de maçonnerie ou de rénovation : téléphone, e-mail, adresse et formulaire de demande de devis.">
+  <link rel="icon" href="assets/img/logo-header.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css?v=3">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <header class="hd">
+    <div class="wrap hd-in">
+      <a class="brand" href="index.html" aria-label="BUILD FRANCE - accueil">
+        <img src="assets/img/logo-header.png" alt="BUILD FRANCE SAS" width="450" height="194">
+      </a>
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <a href="index.html">Présentation</a>
+        <a href="domaines.html">Domaines de compétences</a>
+        <a href="contact.html" aria-current="page">Nous contacter</a>
+      </nav>
+      <a class="hd-tel" href="tel:+33652473005"><small>Appelez-nous</small><b>06 52 47 30 05</b></a>
+      <a class="btn btn-sm hd-cta" href="#devis">Demander un devis</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
+        <span class="menu-ico" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="menu-lbl">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="ph" aria-labelledby="ph-t">
+      <div class="ph-media">
+        <img src="assets/img/photos/1772442198624-4fc4d7281e89-1920.webp" alt="Lecture de plans sur un chantier" fetchpriority="high">
+      </div>
+      <div class="wrap ph-in">
+        <nav class="crumbs fade-up" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> › Nous contacter</nav>
+        <span class="eyebrow fade-up" style="color:var(--orange)">Contact &amp; devis</span>
+        <h1 id="ph-t" class="fade-up d1">Parlons de votre projet</h1>
+        <p class="fade-up d2">Un appel, un e-mail ou quelques lignes dans le formulaire ci-dessous&nbsp;: nous revenons vers vous pour fixer une visite et établir votre devis.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Coordonnées et formulaire">
+      <div class="wrap contact-grid">
+        <div class="rv-l">
+          <span class="eyebrow">Nos coordonnées</span>
+          <h2 class="h-sec" style="font-size:2rem">Joignez-nous directement</h2>
+          <div class="coords">
+            <div class="coord">
+              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg></span>
+              <div><small>Téléphone</small><a href="tel:+33652473005">06 52 47 30 05</a><p>Du lundi au vendredi, en journée</p></div>
+            </div>
+            <div class="coord">
+              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <div><small>E-mail</small><a href="mailto:buildfrance.sas@gmail.com">buildfrance.sas@gmail.com</a><p>Joignez plans ou photos si vous en avez</p></div>
+            </div>
+            <div class="coord">
+              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <div><small>Siège social</small><strong>6 impasse Jean Macé<br>30900 Nîmes</strong></div>
+            </div>
+            <div class="coord">
+              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+              <div><small>Zone d'intervention</small><strong>Nîmes et le Gard</strong><p>Bouches-du-Rhône, Hérault et Vaucluse selon les projets</p></div>
+            </div>
+          </div>
+          <div class="map">
+            <iframe title="Plan d'accès : 6 impasse Jean Macé, 30900 Nîmes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=6+impasse+Jean+Mac%C3%A9,+30900+N%C3%AEmes&z=15&output=embed"></iframe>
+          </div>
+        </div>
+
+        <div class="form-card rv-r" id="devis">
+          <h2>Demande de devis</h2>
+          <p>Les champs marqués d'un astérisque (*) sont obligatoires.</p>
+          <form id="contact-form" action="/api/contact" method="post" novalidate>
+            <!-- Champ piège anti-robots : invisible pour les visiteurs, à laisser vide -->
+            <div class="hp" aria-hidden="true"><label for="f-website">Site web</label><input id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+            <fieldset class="chips">
+              <legend>Votre projet</legend>
+              <label><input type="radio" name="projet" value="Construction de maison" data-slug="construction"><span>Construction de maison</span></label>
+              <label><input type="radio" name="projet" value="Maçonnerie" data-slug="maconnerie"><span>Maçonnerie</span></label>
+              <label><input type="radio" name="projet" value="Rénovation / extension" data-slug="renovation"><span>Rénovation / extension</span></label>
+              <label><input type="radio" name="projet" value="Agencement intérieur" data-slug="agencement"><span>Agencement intérieur</span></label>
+              <label><input type="radio" name="projet" value="Aménagement extérieur" data-slug="exterieurs"><span>Aménagement extérieur</span></label>
+              <label><input type="radio" name="projet" value="Professionnel / sous-traitance" data-slug="professionnels"><span>Professionnel / sous-traitance</span></label>
+            </fieldset>
+            <div class="grid-2">
+              <div class="field" data-req>
+                <label for="f-nom">Nom et prénom *</label>
+                <input id="f-nom" name="nom" class="input" autocomplete="name" required>
+                <span class="msg">Indiquez votre nom.</span>
+              </div>
+              <div class="field" data-req>
+                <label for="f-tel">Téléphone *</label>
+                <input id="f-tel" name="telephone" type="tel" class="input" autocomplete="tel" inputmode="tel" required>
+                <span class="msg">Indiquez un numéro de téléphone valide.</span>
+              </div>
+            </div>
+            <div class="grid-2">
+              <div class="field" data-req>
+                <label for="f-mail">E-mail</label>
+                <input id="f-mail" name="email" type="email" class="input" autocomplete="email">
+                <span class="msg">Cette adresse e-mail ne semble pas valide.</span>
+              </div>
+              <div class="field">
+                <label for="f-ville">Commune du chantier</label>
+                <input id="f-ville" name="commune" class="input" autocomplete="address-level2">
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-delai">Délai souhaité</label>
+              <select id="f-delai" name="delai" class="select">
+                <option value="">- Choisir -</option>
+                <option>Dès que possible</option>
+                <option>Dans les 3 mois</option>
+                <option>Dans 3 à 6 mois</option>
+                <option>Plus tard / projet à l'étude</option>
+              </select>
+            </div>
+            <div class="field" data-req>
+              <label for="f-msg">Décrivez vos travaux * <span class="hint">surface, état actuel, ce que vous souhaitez…</span></label>
+              <textarea id="f-msg" name="message" class="textarea" rows="6" required minlength="10"></textarea>
+              <span class="msg">Décrivez votre projet en quelques mots.</span>
+            </div>
+            <label class="check"><input type="checkbox" id="consent" name="consent"> J'accepte que mes informations soient utilisées par BUILD FRANCE uniquement pour répondre à ma demande.</label>
+            <button class="btn" type="submit" id="f-submit"><span class="lbl">Envoyer ma demande</span> <span class="arr" aria-hidden="true">→</span></button>
+            <p class="form-note">Nous vous répondons rapidement, par téléphone ou par e-mail. Vous pouvez aussi nous appeler au <a href="tel:+33652473005">06 52 47 30 05</a>.</p>
+            <div class="form-ok" role="status" tabindex="-1"><b>Merci, votre demande a bien été envoyée.</b><br>Nous revenons vers vous rapidement pour organiser une visite. <span class="ref"></span></div>
+            <div class="form-err" role="alert" tabindex="-1"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="faq-t">
+      <div class="wrap">
+        <div class="rv">
+          <span class="eyebrow">Questions fréquentes</span>
+          <h2 class="h-sec" id="faq-t">Avant de nous contacter</h2>
+        </div>
+        <div class="faq rv">
+          <details>
+            <summary>Dans quel secteur intervenez-vous&nbsp;?</summary>
+            <p>Nous sommes basés à Nîmes et intervenons dans tout le Gard. Selon la nature et la taille du chantier, nous nous déplaçons aussi dans les Bouches-du-Rhône, l'Hérault et le Vaucluse.</p>
+          </details>
+          <details>
+            <summary>Comment est établi le devis&nbsp;?</summary>
+            <p>Après un premier échange, nous visitons le terrain ou le bâtiment pour relever les dimensions et les contraintes. Vous recevez ensuite un devis détaillé, ouvrage par ouvrage, avec les quantités, les prix unitaires et le taux de TVA applicable.</p>
+          </details>
+          <details>
+            <summary>Quels documents préparer pour la première visite&nbsp;?</summary>
+            <p>Les plans s'il y en a, le permis de construire ou la déclaration préalable si votre projet en nécessite un, et quelques photos de l'existant pour une rénovation. Rien n'est obligatoire pour un premier échange.</p>
+          </details>
+          <details>
+            <summary>Travaillez-vous pour les entreprises&nbsp;?</summary>
+            <p>Oui. Nous intervenons en sous-traitance pour des entreprises du bâtiment et des enseignes, notamment sur des lots de maçonnerie et de gros œuvre. La facturation peut se faire en autoliquidation de TVA lorsque la réglementation le prévoit.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section legal" id="mentions" aria-labelledby="ml-t">
+      <div class="wrap">
+        <span class="eyebrow">Informations légales</span>
+        <h2 class="h-sec" id="ml-t" style="font-size:1.8rem">Mentions légales</h2>
+        <div class="legal-grid">
+          <div>
+            <h3>Éditeur du site</h3>
+            <dl>
+              <dt>Société</dt><dd>BUILD FRANCE SAS</dd>
+              <dt>Forme</dt><dd>SAS au capital variable de 600&nbsp;€</dd>
+              <dt>Siège</dt><dd>6 impasse Jean Macé, 30900 Nîmes</dd>
+              <dt>SIREN</dt><dd>106 712 953 RCS Nîmes</dd>
+              <dt>SIRET</dt><dd>106 712 953 00012</dd>
+              <dt>TVA</dt><dd>FR71 106 712 953</dd>
+              <dt>Code APE</dt><dd>41.20A</dd>
+            </dl>
+          </div>
+          <div>
+            <h3>Publication et hébergement</h3>
+            <dl>
+              <dt>Directeur de la publication</dt><dd>Youssef Tahiri, Président</dd>
+              <dt>Contact</dt><dd>buildfrance.sas@gmail.com · 06 52 47 30 05</dd>
+              <!-- À compléter au moment de la mise en ligne : nom, adresse et téléphone de l'hébergeur (obligatoire, art. 6 LCEN) -->
+              <dt>Hébergeur</dt><dd>Nom, adresse et téléphone de l'hébergeur</dd>
+            </dl>
+          </div>
+          <div>
+            <h3>Données personnelles et crédits</h3>
+            <p>Les informations saisies dans le formulaire de contact sont transmises par e-mail à BUILD FRANCE et conservées sur le serveur du site. Elles servent uniquement à répondre à votre demande et ne sont jamais cédées à des tiers. Elles sont supprimées au plus tard 3 ans après le dernier contact. Vous pouvez demander leur consultation, leur rectification ou leur suppression à buildfrance.sas@gmail.com.</p>
+            <p>Ce site n'utilise pas de cookies de suivi. Photographies&nbsp;: Unsplash (licence Unsplash).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft">
+    <div class="wrap ft-top">
+      <div class="ft-brand">
+        <img src="assets/img/logo-build-france.png" alt="BUILD FRANCE SAS - Construction, Rénovation, Agencement et Aménagement d'Espaces" width="538" height="284" loading="lazy">
+        <p>Construction, rénovation, agencement et aménagement d'espaces à Nîmes et dans le Gard.</p>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <ul><li><a href="index.html">Présentation</a></li><li><a href="domaines.html">Domaines de compétences</a></li><li><a href="contact.html">Nous contacter</a></li></ul>
+      </div>
+      <div>
+        <h2>Domaines</h2>
+        <ul><li><a href="domaines.html#construction">Maisons individuelles</a></li><li><a href="domaines.html#maconnerie">Maçonnerie</a></li><li><a href="domaines.html#renovation">Rénovation</a></li><li><a href="domaines.html#exterieurs">Aménagements extérieurs</a></li></ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul><li><a href="tel:+33652473005">06 52 47 30 05</a></li><li><a href="mailto:buildfrance.sas@gmail.com">buildfrance.sas@gmail.com</a></li><li>6 impasse Jean Macé<br>30900 Nîmes</li></ul>
+      </div>
+    </div>
+    <div class="wrap ft-bottom">
+      <span>© <span data-year>2026</span> BUILD FRANCE SAS · SIRET 106 712 953 00012</span>
+      <span><a href="#mentions">Mentions légales</a> · Photos : Unsplash</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js?v=3"></script>
+</body>
+</html>
