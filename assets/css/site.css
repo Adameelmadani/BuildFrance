@@ -2,6 +2,8 @@
    Même charte que l'espace de gestion : blanc, filets gris, un seul accent orange (logo),
    Montserrat pour les titres, Source Sans 3 pour le texte, filet tricolore du logo. */
 :root {
+  /* Site toujours en thème clair : empêche le mode sombre forcé de certains navigateurs mobiles */
+  color-scheme: only light;
   --orange: #f08a0a;
   --orange-btn: #d25e00;
   --orange-btn-h: #b24f00;
